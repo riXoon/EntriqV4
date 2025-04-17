@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../CSS/EnterprisePage/product.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Product</title>
+</head>
+<body>
+
+
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo">ENT<span style="color: #D4AC0D;">RIQ</span></div>
+            <ul class="nav-links">
+                <li><a href="../../HTML/EnterprisePage/dashboard.html"><i class="fas fa-chart-pie"></i> Dashboard</a></li>
+                <li class="active"><a href="#"><i class="fas fa-box-open"></i> Products</a></li>
+                <li><a href="#"><i class="fas fa-chart-bar"></i> Dashboard</a></li>
+                <li><a href="#"><i class="fas fa-chart-pie"></i> Dashboard</a></li>
+                <li><a href="#"><i class="fas fa-user"></i> Account</a></li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <header>
+                <div class="user-info">
+                    <div class="notifications"><i class="fas fa-bell"></i></div>
+                    <div class="profile">
+                        <div class="avatar">
+                            <img src="../../Assets/enterprise-frame.png" alt="Admin Avatar">
+                        </div>
+                        <div class="username">Admin</div>
+                    </div>
+                </div>
+            </header>
+
+            <section class="products-section">
+                <div class="products-header">
+                    <h1>Products</h1>
+                    <button class="add-product-btn"><i class="fas fa-plus"></i> Add Product</button>
+                </div>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <img src="../../Assets/borgir.png" alt="Apple Watch Series 4">
+                        <div class="product-details">
+                            <h3>Apple Watch Series 4</h3>
+                            <span class="price">$120.00</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="edit-btn"><i class="fas fa-edit"></i> Edit Product</button>
+                            <div class="stock-info">
+                                <span class="stock-label">Stock</span>
+                                <span class="stock-quantity">25</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="../../Assets/borgir.png" alt="Apple Watch Series 4">
+                        <div class="product-details">
+                            <h3>Apple Watch Series 4</h3>
+                            <span class="price">$120.00</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="edit-btn"><i class="fas fa-edit"></i> Edit Product</button>
+                            <div class="stock-info">
+                                <span class="stock-label">Stock</span>
+                                <span class="stock-quantity">25</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="../../Assets/borgir.png" alt="Apple Watch Series 4">
+                        <div class="product-details">
+                            <h3>Apple Watch Series 4</h3>
+                            <span class="price">$120.00</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="edit-btn"><i class="fas fa-edit"></i> Edit Product</button>
+                            <div class="stock-info">
+                                <span class="stock-label">Stock</span>
+                                <span class="stock-quantity">25</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="../../Assets/borgir.png" alt="Apple Watch Series 4">
+                        <div class="product-details">
+                            <h3>Apple Watch Series 4</h3>
+                            <span class="price">$120.00</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="edit-btn"><i class="fas fa-edit"></i> Edit Product</button>
+                            <div class="stock-info">
+                                <span class="stock-label">Stock</span>
+                                <span class="stock-quantity">25</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="../../Assets/borgir.png" alt="Apple Watch Series 4">
+                        <div class="product-details">
+                            <h3>Apple Watch Series 4</h3>
+                            <span class="price">$120.00</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="edit-btn"><i class="fas fa-edit"></i> Edit Product</button>
+                            <div class="stock-info">
+                                <span class="stock-label">Stock</span>
+                                <span class="stock-quantity">25</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="../../Assets/borgir.png" alt="Apple Watch Series 4">
+                        <div class="product-details">
+                            <h3>Apple Watch Series 4</h3>
+                            <span class="price">$120.00</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="edit-btn"><i class="fas fa-edit"></i> Edit Product</button>
+                            <div class="stock-info">
+                                <span class="stock-label">Stock</span>
+                                <span class="stock-quantity">25</span>
+                            </div>
+                        </div>
+                    </div>
+        </main>
+    </div>
+
+        <div id="addProductModal" class="modal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <h2>Add product</h2>
+                <p>Add a new product to your store</p>
+                    
+            <form id="addProductForm">
+                <div class="form-group">
+                    <label for="productName">Product Name</label>
+                    <input type="text" id="productName" placeholder="Input Product Name">
+                    <small>Give your product a short and clear name</small>
+                </div>
+                    
+                <div class="form-group">
+                    <label for="description">Description</label>
+                    <textarea id="description" placeholder="Input Product Description"></textarea>
+                    <small>Give your product a short and clear description</small>
+                </div>
+
+                <div class="quantity-price-row">
+                        <div class="form-group">
+                        <label for="quantity">Quantity</label>
+                        <input type="number" id="quantity" placeholder="Quantity">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="price">Price</label>
+                        <input type="text" id="price" placeholder="Price">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="image-upload-area" onclick="document.getElementById('imageInput').click()">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M5 19h14a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2zm12-10l-4 4-2-2-2 2-4-4 1.5-1.5 2.5 2.5 1.5-1.5 2.5 2.5 1.5-1.5 4 4z"/>
+                        </svg>
+                            <p>Drop product image here, or</p>
+                            <button type="button">Click to browse</button>
+                            <input type="file" id="imageInput" style="display:none">
+                    </div>
+                        <small>Add an image of your product. Used to represent your product during checkout, social sharing, and more.</small>
+                </div>
+
+                <button type="submit" class="add-button">Add</button>
+            </form>
+            </div>
+        </div>
+                
+        <div id="editProductModal" class="modal">
+            <div class="modal-content">
+                <span class="close-button edit-close-button">&times;</span>
+                <h2>Edit Product</h2>
+                <p>Edit the details of the selected product</p>
+                    
+            <form id="editProductForm">
+                <input type="hidden" id="editProductId"> <div class="form-group">
+                    <label for="editProductName">Product Name</label>
+                    <input type="text" id="editProductName" placeholder="Input Product Name">
+                        </div>
+                    
+                <div class="form-group">
+                    <label for="editDescription">Description</label>
+                    <textarea id="editDescription" placeholder="Input Product Description"></textarea>
+                </div>
+                    
+                <div class="quantity-price-row">
+                    <div class="form-group">
+                        <label for="editQuantity">Quantity</label>
+                        <input type="number" id="editQuantity" placeholder="Quantity">
+                    </div>
+                        <div class="form-group">
+                            <label for="editPrice">Price</label>
+                            <input type="text" id="editPrice" placeholder="Price">
+                        </div>
+                </div>
+                    
+                <div class="form-group">
+                    <label for="editImageInput">Product Image</label>
+                    <div class="image-upload-area" onclick="document.getElementById('editImageInput').click()">
+                        <svg viewBox="0 0 24 24">
+                             <path d="M5 19h14a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2zm12-10l-4 4-2-2-2 2-4-4 1.5-1.5 2.5 2.5 1.5-1.5 2.5 2.5 1.5-1.5 4 4z"/>
+                        </svg>
+                            <p>Click to change image</p>
+                            <input type="file" id="editImageInput" style="display:none">
+                    </div>
+                        <small>Add or change the image of your product.</small>
+                    </div>
+                    
+                <button type="submit" class="save-button">Save Changes</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+                const addProductBtn = document.querySelector('.add-product-btn');
+                const editButtons = document.querySelectorAll('.edit-btn');
+                const addProductModal = document.getElementById('addProductModal');
+                const editProductModal = document.getElementById('editProductModal');
+                const closeAddModal = addProductModal.querySelector('.close-button');
+                const closeEditModal = editProductModal.querySelector('.edit-close-button');
+
+                // Function to open a modal
+                function openModal(modal) {
+                    modal.style.display = 'block';
+                }
+
+                // Function to close a modal
+                function closeModal(modal) {
+                    modal.style.display = 'none';
+                }
+
+                // Event listener for the "Add Product" button
+                addProductBtn.addEventListener('click', function() {
+                    openModal(addProductModal);
+                });
+
+                // Event listeners for the "Edit Product" buttons
+                editButtons.forEach(button => {
+                    button.addEventListener('click', function() {
+                        // In a real application, you would fetch the product data
+                        // associated with this edit button and populate the edit form.
+                        // For now, we'll just open the modal.
+                        openModal(editProductModal);
+
+                        // Example of how you might pre-fill the edit form (replace with your actual data)
+                        const productCard = this.closest('.product-card');
+                        const productName = productCard.querySelector('.product-details h3').textContent;
+                        const productPrice = productCard.querySelector('.price').textContent;
+
+                        document.getElementById('editProductName').value = productName;
+                        document.getElementById('editPrice').value = productPrice;
+                        // You would do the same for other fields like description and quantity.
+
+                        // You might also want to store the product ID in a hidden field
+                        // in the edit form so you know which product to update.
+                        // document.getElementById('editProductId').value = productId;
+                    });
+                });
+
+                // Event listener to close the "Add Product" modal
+                closeAddModal.addEventListener('click', function() {
+                    closeModal(addProductModal);
+                });
+
+                // Event listener to close the "Edit Product" modal
+                closeEditModal.addEventListener('click', function() {
+                    closeModal(editProductModal);
+                });
+
+                // Close modals if the user clicks outside of them
+                window.addEventListener('click', function(event) {
+                    if (event.target === addProductModal) {
+                        closeModal(addProductModal);
+                    }
+                    if (event.target === editProductModal) {
+                        closeModal(editProductModal);
+                    }
+                });
+
+                // --- Optional: Handle Form Submissions (Add Product) ---
+                const addProductForm = document.getElementById('addProductForm');
+                addProductForm.addEventListener('submit', function(event) {
+                    event.preventDefault(); // Prevent the default form submission
+
+                    // Get the values from the form
+                    const productName = document.getElementById('productName').value;
+                    const description = document.getElementById('description').value;
+                    const quantity = document.getElementById('quantity').value;
+                    const stockQuantityElement = productCard.querySelector('.stock-quantity');
+                    const productQuantity = stockQuantityElement ? stockQuantityElement.textContent : '';
+                    const price = document.getElementById('price').value;
+                    const imageInput = document.getElementById('imageInput');
+                    const imageFile = imageInput.files[0]; // Get the selected file
+
+                    // You would typically send this data to your server to add the new product
+                    console.log('Adding Product:', { productName, description, quantity, price, imageFile });
+
+                    // After successful submission, you might want to:
+                    // 1. Close the modal
+                    closeModal(addProductModal);
+                    // 2. Optionally, update the product grid on the page to show the new product
+                    // 3. Reset the form
+                    addProductForm.reset();
+                });
+
+                // --- Optional: Handle Form Submissions (Edit Product) ---
+                const editProductForm = document.getElementById('editProductForm');
+                editProductForm.addEventListener('submit', function(event) {
+                    event.preventDefault(); // Prevent the default form submission
+
+                    // Get the values from the edit form
+                    const productId = document.getElementById('editProductId').value; // If you added this hidden field
+                    const productName = document.getElementById('editProductName').value;
+                    const description = document.getElementById('editDescription').value;
+                    const quantity = document.getElementById('editQuantity').value;
+                    const price = document.getElementById('editPrice').value;
+                    const editImageInput = document.getElementById('editImageInput');
+                    const editImageFile = editImageInput.files[0]; // Get the selected file
+
+                    // You would typically send this data to your server to update the product
+                    console.log('Editing Product:', { productId, productName, description, quantity, price, editImageFile });
+
+                    // After successful submission, you might want to:
+                    // 1. Close the modal
+                    closeModal(editProductModal);
+                    // 2. Optionally, update the corresponding product card in the grid
+                    // 3. Reset the form (or just the relevant parts)
+                });
+            });
+        </script>
+
+    </body>
+</html>
