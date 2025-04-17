@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../CSS/EnterprisePage/product.css">
+    <link rel="stylesheet" href="../../CSS/EnterprisePage/account.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>Dashboard</title>
 </head>
@@ -12,18 +12,18 @@
         <aside class="sidebar">
             <div class="logo">ENT<span style="color: #D4AC0D;">RIQ</span></div>
             <ul class="nav-links">
-                <li class="active"><a href="#"><i class="fas fa-chart-pie"></i> Dashboard</a></li>
-                <li><a href="../../HTML/EnterprisePage/product.html"><i class="fas fa-box-open"></i> Products</a></li>
-                <li><a href="#"><i class="fas fa-chart-bar"></i> Dashboard</a></li>
-                <li><a href="#"><i class="fas fa-chart-pie"></i> Dashboard</a></li>
-                <li><a href="#"><i class="fas fa-user"></i> Account</a></li>
+                <li><a href="../../HTML/EnterprisePage/dashboard.html"><i class="fas fa-chart-pie"></i> Dashboard</a></li>
+                <li><a href="../../HTML/EnterprisePage/account.html"><i class="fas fa-box-open"></i> Inventory</a></li>
+                <li><a href="../../HTML/EnterprisePage/notification.html"><i class="fas fa-chart-bar"></i> Notification</a></li>
+                <li><a href="../../HTML/EnterprisePage/community.html"><i class="fas fa-chart-pie"></i> Community</a></li>
+                <li class="active"><a href="#"><i class="fas fa-user"></i> Account</a></li>
             </ul>
         </aside>
 
         <main class="main-content">
             <header>
                 <div class="user-info">
-                    <div class="notifications"><i class="fas fa-bell"></i></div>
+                    <div class="notifications" id="notificationBell"><i class="fas fa-bell"></i></div>
                     <div class="profile">
                         <div class="avatar">
                             <img src="../../Assets/enterprise-frame.png" alt="Admin Avatar">
@@ -31,6 +31,62 @@
                         <div class="username">Admin</div>
                     </div>
                 </div>
+
+                <div class="notification-dropdown" id="notificationDropdown">
+                    <div class="notification-header">
+                        Notification
+                        <span>Unread (3)</span>
+                    </div>
+                    <ul class="notification-list">
+                        <li class="notification-item">
+                            <div class="icon"><i class="fas fa-lock"></i></div>
+                            <div class="details">
+                                <div class="subject">Account Update.</div>
+                                <div class="message">Your password has been changed...</div>
+                            </div>
+                            <span class="timestamp">5 minutes ago</span>
+                        </li>
+                        <li class="notification-item">
+                            <div class="icon"><i class="fas fa-file-alt"></i></div>
+                            <div class="details">
+                                <div class="subject">Account Request.</div>
+                                <div class="message">Icon Request Has Been Completed</div>
+                            </div>
+                            <span class="timestamp">7 minutes ago</span>
+                        </li>
+                        <li class="notification-item">
+                            <div class="icon"><i class="fas fa-comment-dots"></i></div>
+                            <div class="details">
+                                <div class="subject">Community Post.</div>
+                                <div class="message">1 reply on you community post</div>
+                            </div>
+                            <span class="timestamp">Monday 6:00 PM</span>
+                        </li>
+                    </ul>
+                    <div class="notification-footer" id="viewAllNotifications">View All Notification</div>
+                </div>
             </header>
+
+            <script>
+                const notificationBell = document.getElementById('notificationBell');
+                const notificationDropdown = document.getElementById('notificationDropdown');
+                const viewAllNotifications = document.getElementById('viewAllNotifications');
+    
+                notificationBell.addEventListener('click', () => {
+                    notificationDropdown.classList.toggle('show');
+                });
+    
+                // Close the dropdown when clicking outside
+                document.addEventListener('click', (event) => {
+                    if (!notificationBell.contains(event.target) && !notificationDropdown.contains(event.target)) {
+                        notificationDropdown.classList.remove('show');
+                    }
+                });
+    
+                // Redirect to the notification page when "View All Notification" is clicked
+                viewAllNotifications.addEventListener('click', () => {
+                    window.location.href = '../../HTML/EnterprisePage/notification.html'; // Adjust the path if necessary
+                });
+            </script>
 </body>
 </html>

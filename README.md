@@ -188,9 +188,12 @@ April 15, 2025
     <!-- ?FIXED BY: checking the structure of html codes after adjusting the components and implement the width:100% to the main-content div container-->
 
 April 16, 2025
+
+Arpil 17, 2025
 <!-- TODOS: --> Priority Level(PL): 1 - 5, Level 5 yung most priority
     <!-- TODO:Enhance design of Enterprise Page --> PL: 4
     <!-- TODO: Improve checkout page design --> PL: 5
     <!-- TODO: Overall mobile responsiveness of the design --> 2
     <!-- TODO: Enterprise Dashboard--> PL: 4
     <!-- TODO: Enterprise Account--> PL: 3
+
