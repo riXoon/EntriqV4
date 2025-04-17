@@ -189,11 +189,23 @@ April 15, 2025
 
 April 16, 2025
 
-Arpil 17, 2025
+April 17, 2025
 <!-- TODOS: --> Priority Level(PL): 1 - 5, Level 5 yung most priority
     <!-- TODO:Enhance design of Enterprise Page --> PL: 4
     <!-- TODO: Improve checkout page design --> PL: 5
     <!-- TODO: Overall mobile responsiveness of the design --> 2
     <!-- TODO: Enterprise Dashboard--> PL: 4
     <!-- TODO: Enterprise Account--> PL: 3
+    <!-- TODO: Enterprise Community--> PL: 3
 
+<!-- **TASK FINISHED -->
+    <!-- **Enterprise - Notification Page (Partially) -->
+
+April 18, 2025
+<!-- TODOS: --> Priority Level(PL): 1 - 5, Level 5 yung most priority
+    <!-- TODO:Enhance design of Enterprise Page --> PL: 4
+    <!-- TODO: Improve checkout page design --> PL: 5
+    <!-- TODO: Overall mobile responsiveness of the design --> 2
+    <!-- TODO: Enterprise Dashboard--> PL: 4
+    <!-- TODO: Enterprise Account--> PL: 3
+    <!-- TODO: Enterprise Community--> PL: 3
