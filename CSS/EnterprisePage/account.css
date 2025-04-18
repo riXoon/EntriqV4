@@ -227,3 +227,246 @@ color: #333;
   background-color: #f9f9f9;
 }
 
+/* Account Page Specific Styles (No significant changes needed, adjust width if necessary) */
+
+.account-content{
+  position: relative;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  max-width: 100%;
+  width: 100%;
+  overflow-y: auto; /* Enable vertical scrolling */
+  max-height: 85vh; /* Set a maximum height for the section, adjust as needed */
+  margin: 10px auto 0;
+  box-sizing: border-box;
+}
+
+.profile-banner {
+  background-color: #FFF9AE;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+
+.profile-banner h2 {
+  margin-top: 0;
+  font-size: 1.5rem;
+}
+
+.profile-info-grid {
+  display: grid;
+  grid-template-columns: auto auto; /* Two columns */
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.info-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.info-card h3 {
+  font-size: 1.1rem;
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.info-item {
+  margin-bottom: 15px;
+}
+
+.info-item label {
+  display: block;
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.info-item input[type="text"],
+.info-item input[type="email"],
+.info-item input[type="tel"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+.edit-button {
+  background-color: #ffda63;
+  color: #333;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+.current-contact-info {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px;
+}
+
+.current-contact-info h3 {
+  font-size: 1.1rem;
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.current-email,
+.current-phone {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.current-email i,
+.current-phone i {
+  margin-right: 10px;
+  font-size: 1.1rem;
+  color: #007bff; /* Example icon color */
+}
+
+.add-button {
+  background-color: #e0e0e0;
+  color: #555;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+/* Styles for edit mode */
+.info-card.edit-mode input[type="text"],
+.info-card.edit-mode input[type="email"],
+.info-card.edit-mode input[type="tel"] {
+    border: 1px solid #007bff; /* Highlight editable fields */
+    background-color: #f9f9f9;
+}
+
+.info-card.edit-mode .edit-button {
+    display: none; /* Hide Edit button in edit mode */
+}
+
+.info-card.edit-mode .save-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    margin-top: 10px;
+    display: inline-block; /* Show Save button */
+}
+
+.save-button {
+    display: none; /* Initially hide Save button */
+}
+
+/* Styles for avatar editing */
+.avatar-edit-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.avatar-preview {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 10px;
+  background-color: #ddd;
+}
+
+.avatar-preview img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.change-icon-button {
+  background-color: #f0ad4e; 
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.file-input-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  color: #555;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.file-input-wrapper input[type=file] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+.icon-actions button {
+  margin-right: 0px;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
+
+.icon-actions .save-icon-button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+
+}
+
+.icon-actions .cancel-icon-button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+}
+
+.avatar-edit-container.edit-icon .change-icon-button {
+  display: none;
+}
+
+.avatar-edit-container.edit-icon .file-input-wrapper,
+.avatar-edit-container.edit-icon .icon-actions {
+  display: block;
+}
+
+.file-input-wrapper,
+.icon-actions {
+  display: none;
+}
