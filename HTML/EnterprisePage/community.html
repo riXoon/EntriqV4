@@ -13,11 +13,16 @@
             <div class="logo">ENT<span style="color: #D4AC0D;">RIQ</span></div>
             <ul class="nav-links">
                 <li><a href="../../HTML/EnterprisePage/dashboard.html"><i class="fas fa-chart-pie"></i> Dashboard</a></li>
-                <li><a href="../../HTML/EnterprisePage/account.html"><i class="fas fa-box-open"></i> Inventory</a></li>
+                <li><a href="../../HTML/EnterprisePage/product.html"><i class="fas fa-box-open"></i> Inventory</a></li>
                 <li><a href="../../HTML/EnterprisePage/notification.html"><i class="fas fa-chart-bar"></i> Notification</a></li>
-                <li class="active"><a href="#"><i class="fas fa-chart-pie"></i> Community</a></li>
+                <li class="active"><a href="#"><i class="fas fa-heart"></i> Community</a></li>
                 <li><a href="../../HTML/EnterprisePage/account.html"><i class="fas fa-user"></i> Account</a></li>
             </ul>
+            <div class="logout-button">
+                <a href="#">
+                    <i class="fas fa-sign-out-alt"></i> Log Out
+                </a>
+            </div>
         </aside>
 
         <main class="main-content">
@@ -66,29 +71,178 @@
                     <div class="notification-footer" id="viewAllNotifications">View All Notification</div>
                 </div>
             </header>
+ 
+            <div class="community-content">
+                <div class="community-highlights">
+                    <h2>COMMUNITY HIGHLIGHTS</h2>
+                    <div class="highlight-item">
+                        <img src="../../Assets/juan-enterprise.png" alt="Logo"> <span>Ere Enterprise</span>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur praesentium facere, soluta facilis amet alias nemo placeat impedit at incidunt temporibus, voluptate vero aliquam suscipit modi nisi. Sunt, quisquam?</p>
+                    </div>
+                    <div class="highlight-item">
+                        <img src="../../Assets/juan-enterprise.png" alt="Logo"> <span>Inkoyo Co.</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus deleniti neque ullam illum officiis reprehenderit omnis! Ratione facere maxime esse voluptatibus sed, perferendis odit ducimus, pariatur doloribus officiis harum illum!</p>
+                    </div>
+                    <div class="highlight-item">
+                        <img src="../../Assets/juan-enterprise.png" alt="Logo"> <span>Dasig Perfumes</span>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam nobis autem, quasi omnis eos hic neque aut? Minus quibusdam quia, iusto nulla vel praesentium obcaecati ipsam ullam, a omnis illo?</p>
+                    </div>
+                </div>
+
+                <div class="community-posts-container">
+                    <div class="create-post">
+                        <div class="user-info-post">
+                            <div class="avatar-post">
+                                <img src="path/to/juan-avatar.png" alt="Juan's Avatar">
+                            </div>
+                            <div class="prompt-container">
+                                <textarea id="post-input" placeholder="What's on your mind, Juan?"></textarea>
+                                <button id="post-button" class="hidden-button">Post</button>
+                            </div>
+                        </div>
+                        <div class="post-options">
+                            <button class="option-button">
+                                <i class="fas fa-image"></i> <span>Photo/Video</span>
+                            </button>
+                            <button class="option-button">
+                                <i class="far fa-smile"></i> <span>Feeling/Activity</span>
+                            </button>
+                        </div>
+                    </div>
+
+
+                    <div class="community-post">
+                        <div class="post-header">
+                            <img src="../../Assets/juan-enterprise.png" alt="User Avatar">
+                            <div class="post-info">
+                                <span>Dasig Perfumes</span>
+                                <small>6hr</small>
+                            </div>
+                        </div>
+                        <div class="post-content">
+                            Excited to announce our new summer fragrance line! Check it out now! #summer #fragrance #newarrival
+                        </div>
+                        <div class="post-actions">
+                            <button class="action-button">
+                                <i class="far fa-thumbs-up"></i> <span>Like</span>
+                            </button>
+                            <button class="action-button">
+                                <i class="far fa-comment"></i> <span>Comment</span>
+                            </button>
+                            <button class="action-button">
+                                <i class="fas fa-share"></i> <span>Share</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="community-post">
+                        <div class="post-header">
+                            <img src="../../Assets/enterprise-frame.png" alt="User Avatar">
+                            <div class="post-info">
+                                <span>Dasig Perfumes</span>
+                                <small>6hr</small>
+                            </div>
+                        </div>
+                        <div class="post-content">
+                            Excited to announce our new summer fragrance line! Check it out now! #summer #fragrance #newarrival
+                        </div>
+                        <div class="post-actions">
+                            <button class="action-button">
+                                <i class="far fa-thumbs-up"></i> <span>Like</span>
+                            </button>
+                            <button class="action-button">
+                                <i class="far fa-comment"></i> <span>Comment</span>
+                            </button>
+                            <button class="action-button">
+                                <i class="fas fa-share"></i> <span>Share</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="community-post">
+                        <div class="post-header">
+                            <img src="../../Assets/enterprise-frame.png" alt="User Avatar">
+                            <div class="post-info">
+                                <span>Dasig Perfumes</span>
+                                <small>6hr</small>
+                            </div>
+                        </div>
+                        <div class="post-content">
+                            Excited to announce our new summer fragrance line! Check it out now! #summer #fragrance #newarrival
+                        </div>
+                        <div class="post-actions">
+                            <button class="action-button">
+                                <i class="far fa-thumbs-up"></i> <span>Like</span>
+                            </button>
+                            <button class="action-button">
+                                <i class="far fa-comment"></i> <span>Comment</span>
+                            </button>
+                            <button class="action-button">
+                                <i class="fas fa-share"></i> <span>Share</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </main>
+    </div>
+    <script>
+        const notificationBell = document.getElementById('notificationBell');
+        const notificationDropdown = document.getElementById('notificationDropdown');
+        const viewAllNotifications = document.getElementById('viewAllNotifications');
 
+        notificationBell.addEventListener('click', () => {
+            notificationDropdown.classList.toggle('show');
+        });
 
-        <script>
-            const notificationBell = document.getElementById('notificationBell');
-                const notificationDropdown = document.getElementById('notificationDropdown');
-                const viewAllNotifications = document.getElementById('viewAllNotifications');
+        // Close the dropdown when clicking outside
+        document.addEventListener('click', (event) => {
+            if (!notificationBell.contains(event.target) && !notificationDropdown.contains(event.target)) {
+                notificationDropdown.classList.remove('show');
+            }
+        });
 
-                notificationBell.addEventListener('click', () => {
-                    notificationDropdown.classList.toggle('show');
-                });
+        // Redirect to the notification page when "View All Notification" is clicked
+        viewAllNotifications.addEventListener('click', () => {
+            window.location.href = '../../HTML/EnterprisePage/notification.html'; // Adjust the path if necessary
+        });
 
-                // Close the dropdown when clicking outside
-                document.addEventListener('click', (event) => {
-                    if (!notificationBell.contains(event.target) && !notificationDropdown.contains(event.target)) {
-                        notificationDropdown.classList.remove('show');
-                    }
-                });
+        const postInput = document.getElementById('post-input');
+        const postButton = document.getElementById('post-button');
 
-                // Redirect to the notification page when "View All Notification" is clicked
-                viewAllNotifications.addEventListener('click', () => {
-                    window.location.href = '../../HTML/EnterprisePage/notification.html'; // Adjust the path if necessary
-                });
-        </script>
+        postInput.addEventListener('input', function() {
+            this.style.height = 'auto';
+            this.style.height = (this.scrollHeight) + 'px';
+
+            if (this.value.trim() !== "") {
+                postButton.classList.add('show-button');
+            } else {
+                postButton.classList.remove('show-button');
+                this.style.height = '40px'; // Reset to minimum height when empty
+            }
+        });
+
+        postButton.addEventListener('click', function() {
+            const postText = postInput.value.trim();
+            if (postText !== "") {
+                // Here you would typically handle the posting logic,
+                // such as sending the data to your server.
+                console.log("Posting:", postText);
+                // After posting, you might want to clear the input and hide the button
+                postInput.value = "";
+                postButton.classList.remove('show-button');
+                postInput.style.height = '40px'; // Reset height after posting
+            } else {
+                alert("Please type something to post.");
+            }
+        });
+
+        // Reset height on blur (when the input loses focus and is empty)
+        postInput.addEventListener('blur', function() {
+            if (this.value.trim() === "") {
+                this.style.height = '40px';
+            }
+        });
+    </script>
 </body>
 </html>

@@ -17,9 +17,14 @@
                 <li><a href="../../HTML/EnterprisePage/dashboard.html"><i class="fas fa-chart-pie"></i> Dashboard</a></li>
                 <li><a href="../../HTML/EnterprisePage/product.html"><i class="fas fa-box-open"></i> Inventory</a></li>
                 <li class="active"><a href="#"><i class="fas fa-chart-bar"></i> Notification</a></li>
-                <li><a href="../../HTML/EnterprisePage/community.html"><i class="fas fa-chart-pie"></i> Community</a></li>
+                <li><a href="../../HTML/EnterprisePage/community.html"><i class="fas fa-heart"></i> Community</a></li>
                 <li><a href="../../HTML/EnterprisePage/account.html"><i class="fas fa-user"></i> Account</a></li>
             </ul>
+            <div class="logout-button">
+                <a href="#">
+                    <i class="fas fa-sign-out-alt"></i> Log Out
+                </a>
+            </div>
         </aside>
 
         <main class="main-content">
@@ -38,18 +43,17 @@
             <div class="email-inbox-container">
                 <header class="email-inbox-header">
                     <div class="email-inbox-header-left">
-                        <i class="far fa-square"></i>
+                        <i class="far fa-square" id="selectAllCheckboxes"></i>
                     </div>
                     <div class="email-inbox-header-right">
                         <i class="fas fa-exclamation-circle"></i>
                         <i class="far fa-trash-alt"></i>
-                        <i class="fas fa-ellipsis-v"></i>
                     </div>
                 </header>
 
                 <main class="email-inbox-list">
                     <div class="email-inbox-item read">
-                        <input type="checkbox" checked>
+                        <input type="checkbox" class="inbox-checkbox">
                         <i class="far fa-star"></i>
                         <div class="email-inbox-details">
                             <span class="sender-subject">Account Update. Your password has been changed...</span>
@@ -58,7 +62,7 @@
                         <span class="timestamp">5 minutes ago</span>
                     </div>
                     <div class="email-inbox-item read">
-                        <input type="checkbox">
+                        <input type="checkbox" class="inbox-checkbox">
                         <i class="far fa-star"></i>
                         <div class="email-inbox-details">
                             <span class="sender-subject">Account Update. Icon request has been updated...</span>
@@ -67,7 +71,7 @@
                         <span class="timestamp">7 minutes ago</span>
                     </div>
                     <div class="email-inbox-item unread">
-                        <input type="checkbox" checked>
+                        <input type="checkbox" class="inbox-checkbox">
                         <i class="far fa-star"></i>
                         <div class="email-inbox-details">
                             <span class="sender-subject"><i class="fas fa-check-double"></i> Tychee Summer commented on a post...</span>
@@ -76,7 +80,7 @@
                         <span class="timestamp">Monday 6:00 PM</span>
                     </div>
                     <div class="email-inbox-item">
-                        <input type="checkbox">
+                        <input type="checkbox" class="inbox-checkbox">
                         <i class="far fa-star"></i>
                         <div class="email-inbox-details">
                             <span class="sender-subject"><i class="fas fa-users"></i> Community Poet. Sunny Dixon and 24 others reacted...</span>
@@ -85,7 +89,7 @@
                         <span class="timestamp">Sunday 2:15 PM</span>
                     </div>
                     <div class="email-inbox-item read">
-                        <input type="checkbox" checked>
+                        <input type="checkbox" class="inbox-checkbox">
                         <i class="far fa-star"></i>
                         <div class="email-inbox-details">
                             <span class="sender-subject"><i class="fas fa-shopping-cart"></i> New Orders. 20 new placed orders by Shawn Phillips...</span>
@@ -94,7 +98,7 @@
                         <span class="timestamp">Saturday 1:00 PM</span>
                     </div>
                     <div class="email-inbox-item read">
-                        <input type="checkbox" checked>
+                        <input type="checkbox" class="inbox-checkbox">
                         <i class="far fa-star"></i>
                         <div class="email-inbox-details">
                             <span class="sender-subject"><i class="fas fa-box"></i> Order Delivered. Kez Paisley Burger has been delivered...</span>
@@ -103,7 +107,7 @@
                         <span class="timestamp">Saturday 11:30 AM</span>
                     </div>
                     <div class="email-inbox-item read">
-                        <input type="checkbox" checked>
+                        <input type="checkbox" class="inbox-checkbox">
                         <i class="far fa-star"></i>
                         <div class="email-inbox-details">
                             <span class="sender-subject"><i class="fas fa-shield-alt"></i> New device log in detected. If this was you...</span>
@@ -112,7 +116,7 @@
                         <span class="timestamp">Friday 10:00 AM</span>
                     </div>
                     <div class="email-inbox-item read">
-                        <input type="checkbox" checked>
+                        <input type="checkbox" class="inbox-checkbox">
                         <i class="far fa-star"></i>
                         <div class="email-inbox-details">
                             <span class="sender-subject"><i class="fas fa-shield-alt"></i> New device log in detected. If this was you...</span>
@@ -121,7 +125,7 @@
                         <span class="timestamp">Friday 10:00 AM</span>
                     </div>
                     <div class="email-inbox-item read">
-                        <input type="checkbox" checked>
+                        <input type="checkbox" class="inbox-checkbox">
                         <i class="far fa-star"></i>
                         <div class="email-inbox-details">
                             <span class="sender-subject"><i class="fas fa-shield-alt"></i> New device log in detected. If this was you...</span>
@@ -130,7 +134,7 @@
                         <span class="timestamp">Friday 10:00 AM</span>
                     </div>
                     <div class="email-inbox-item read">
-                        <input type="checkbox" checked>
+                        <input type="checkbox" class="inbox-checkbox">
                         <i class="far fa-star"></i>
                         <div class="email-inbox-details">
                             <span class="sender-subject"><i class="fas fa-shield-alt"></i> New device log in detected. If this was you...</span>
@@ -139,7 +143,7 @@
                         <span class="timestamp">Friday 10:00 AM</span>
                     </div>
                     <div class="email-inbox-item read">
-                        <input type="checkbox" checked>
+                        <input type="checkbox" class="inbox-checkbox">
                         <i class="far fa-star"></i>
                         <div class="email-inbox-details">
                             <span class="sender-subject"><i class="fas fa-shield-alt"></i> New device log in detected. If this was you...</span>
@@ -183,12 +187,15 @@
                 </ul>
                 <div class="notification-footer" id="viewAllNotifications">View All Notification</div>
             </div>
+
         </main>
 
         <script>
             const notificationBell = document.getElementById('notificationBell');
             const notificationDropdown = document.getElementById('notificationDropdown');
             const viewAllNotifications = document.getElementById('viewAllNotifications');
+            const selectAllCheckboxes = document.getElementById('selectAllCheckboxes');
+            const inboxCheckboxes = document.querySelectorAll('.inbox-checkbox');
 
             notificationBell.addEventListener('click', () => {
                 notificationDropdown.classList.toggle('show');
@@ -204,6 +211,14 @@
             // Redirect to the notification page when "View All Notification" is clicked
             viewAllNotifications.addEventListener('click', () => {
                 window.location.href = '../../HTML/EnterprisePage/notification.html'; // Adjust the path if necessary
+            });
+
+            // Select all checkboxes
+            selectAllCheckboxes.addEventListener('click', () => {
+                inboxCheckboxes.forEach(checkbox => {
+                    checkbox.checked = selectAllCheckboxes.classList.contains('checked') ? false : true;
+                });
+                selectAllCheckboxes.classList.toggle('checked'); // Toggle the class to indicate state
             });
         </script>
     </div>
