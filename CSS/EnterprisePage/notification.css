@@ -155,7 +155,7 @@ header {
     overflow-y: auto;
     height: calc(100% - 40px);
     box-sizing: border-box;
-    max-height: 85vh;
+    max-height: 86vh;
 }
 
 .email-inbox-header {

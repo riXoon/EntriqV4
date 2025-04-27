@@ -257,7 +257,7 @@ color: #333;
   background-color: #f9f9f9;
 }
 
-/* Account Page Specific Styles (No significant changes needed, adjust width if necessary) */
+/* Account Page Specific Styles */
 
 .account-content{
   position: relative;
@@ -268,7 +268,7 @@ color: #333;
   max-width: 100%;
   width: 100%;
   overflow-y: auto; /* Enable vertical scrolling */
-  max-height: 85vh; /* Set a maximum height for the section, adjust as needed */
+  max-height: 86vh; /* Set a maximum height for the section, adjust as needed */
   margin: 10px auto 0;
   box-sizing: border-box;
 }

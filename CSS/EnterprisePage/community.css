@@ -277,7 +277,7 @@ header {
   background-color: #f9f9f9;
   padding: 20px;
   box-sizing: border-box;
-  max-height: 100%; /* Take full available height of parent */
+  max-height: 100%; /*   Take full available height of parent */
   overflow-y: auto; /* Enable vertical scrolling if content overflows */
   margin-right: 10px;
   border-radius: 10px;

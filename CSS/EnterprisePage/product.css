@@ -11,8 +11,6 @@
   position: relative;
   width: 100%;
   background-color: #f1f1f1;
-  
-  
 }
 
 .sidebar {
@@ -160,7 +158,7 @@ header {
   max-width: 100%;
   width: 100%;
   overflow-y: auto; /* Enable vertical scrolling */
-  max-height: 85vh; /* Set a maximum height for the section, adjust as needed */
+  max-height: 86vh; /* Set a maximum height for the section, adjust as needed */
   margin: 10px auto 0;
   box-sizing: border-box;
   }
