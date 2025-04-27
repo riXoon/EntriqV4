@@ -5,9 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../CSS/EnterprisePage/product.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <title>Inventory</title>
+    <title>Product</title>
 </head>
 <body>
+
+    <div class="modal-bg"></div> <!-- **MODAL BACKGROUND TO MAN -->
+
+    <!-- **ADDED PRODUCT MODAL -->
+    <!-- For Add Product Confirmation -->
+<div class="addCart-container" id="cartModal">
+    <img src="../../Assets/cart.png" alt="" class="errorIcon">
+    <p class="cookieHeading">Item Added to the Cart!</p>
+    <p class="cookieDescription">Nice choice! What's next?</p>
+    <div class="buttonContainer">
+        <button class="acceptButton" id="okayButtonAdd">Okay</button>
+    </div>
+</div>
+
+<!-- For Edit Product Confirmation -->
+<div class="addCart-container" id="editModal">
+    <img src="../../Assets/cart.png" alt="" class="errorIcon">
+    <p class="cookieHeading">Item Updated!</p>
+    <p class="cookieDescription">Your changes have been saved.</p>
+    <div class="buttonContainer">
+        <button class="acceptButton" id="okayButtonEdit">Okay</button>
+    </div>
+</div>
+
+
+    <!-- **ADDED PRODUCT CONFIRMATION MODAL -->
+    <div class="loading-container" id="loading-container">
+        <div class="modal-bg"></div>
+         <div class="wrapper">
+             <div class="circle"></div>
+             <div class="circle"></div>
+             <div class="circle"></div>
+             <div class="shadow"></div>
+             <div class="shadow"></div>
+             <div class="shadow"></div>
+            </div>
+            <h1 class="loading-txt">Processing you request, please wait.</h1>
+    </div>
 
 
     <div class="container">
@@ -15,22 +53,17 @@
             <div class="logo">ENT<span style="color: #D4AC0D;">RIQ</span></div>
             <ul class="nav-links">
                 <li><a href="../../HTML/EnterprisePage/dashboard.html"><i class="fas fa-chart-pie"></i> Dashboard</a></li>
-                <li class="active"><a href="#"><i class="fas fa-box-open"></i> Inventory</a></li>
-                <li><a href="../../HTML/EnterprisePage/notification.html"><i class="fas fa-chart-bar"></i> Notification</a></li>
-                <li><a href="../../HTML/EnterprisePage/community.html"><i class="fas fa-heart"></i> Community</a></li>
-                <li><a href="../../HTML/EnterprisePage/account.html"><i class="fas fa-user"></i> Account</a></li>
+                <li class="active"><a href="#"><i class="fas fa-box-open"></i> Products</a></li>
+                <li><a href="#"><i class="fas fa-chart-bar"></i> Dashboard</a></li>
+                <li><a href="#"><i class="fas fa-chart-pie"></i> Dashboard</a></li>
+                <li><a href="#"><i class="fas fa-user"></i> Account</a></li>
             </ul>
-            <div class="logout-button">
-                <a href="#">
-                    <i class="fas fa-sign-out-alt"></i> Log Out
-                </a>
-            </div>
         </aside>
 
         <main class="main-content">
             <header>
                 <div class="user-info">
-                    <div class="notifications" id="notificationBell"><i class="fas fa-bell"></i></div>
+                    <div class="notifications"><i class="fas fa-bell"></i></div>
                     <div class="profile">
                         <div class="avatar">
                             <img src="../../Assets/enterprise-frame.png" alt="Admin Avatar">
@@ -50,7 +83,6 @@
                         <img src="../../Assets/borgir.png" alt="Apple Watch Series 4">
                         <div class="product-details">
                             <h3>Apple Watch Series 4</h3>
-                            <p>Masarap to haha</p>
                             <span class="price">$120.00</span>
                         </div>
                         <div class="product-actions">
@@ -65,7 +97,6 @@
                         <img src="../../Assets/borgir.png" alt="Apple Watch Series 4">
                         <div class="product-details">
                             <h3>Apple Watch Series 4</h3>
-                            <p>Masarap to haha</p>
                             <span class="price">$120.00</span>
                         </div>
                         <div class="product-actions">
@@ -80,7 +111,6 @@
                         <img src="../../Assets/borgir.png" alt="Apple Watch Series 4">
                         <div class="product-details">
                             <h3>Apple Watch Series 4</h3>
-                            <p>Masarap to haha</p>
                             <span class="price">$120.00</span>
                         </div>
                         <div class="product-actions">
@@ -95,7 +125,6 @@
                         <img src="../../Assets/borgir.png" alt="Apple Watch Series 4">
                         <div class="product-details">
                             <h3>Apple Watch Series 4</h3>
-                            <p>Masarap to haha</p>
                             <span class="price">$120.00</span>
                         </div>
                         <div class="product-actions">
@@ -110,7 +139,6 @@
                         <img src="../../Assets/borgir.png" alt="Apple Watch Series 4">
                         <div class="product-details">
                             <h3>Apple Watch Series 4</h3>
-                            <p>Masarap to haha</p>
                             <span class="price">$120.00</span>
                         </div>
                         <div class="product-actions">
@@ -125,7 +153,6 @@
                         <img src="../../Assets/borgir.png" alt="Apple Watch Series 4">
                         <div class="product-details">
                             <h3>Apple Watch Series 4</h3>
-                            <p>Masarap to haha</p>
                             <span class="price">$120.00</span>
                         </div>
                         <div class="product-actions">
@@ -136,8 +163,6 @@
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
         </main>
     </div>
 
@@ -234,178 +259,12 @@
         </div>
     </div>
 
-    <div class="notification-dropdown" id="notificationDropdown">
-        <div class="notification-header">
-            Notification
-            <span>Unread (3)</span>
-        </div>
-        <ul class="notification-list">
-            <li class="notification-item">
-                <div class="icon"><i class="fas fa-lock"></i></div>
-                <div class="details">
-                    <div class="subject">Account Update.</div>
-                    <div class="message">Your password has been changed...</div>
-                </div>
-                <span class="timestamp">5 minutes ago</span>
-            </li>
-            <li class="notification-item">
-                <div class="icon"><i class="fas fa-file-alt"></i></div>
-                <div class="details">
-                    <div class="subject">Account Request.</div>
-                    <div class="message">Icon Request Has Been Completed</div>
-                </div>
-                <span class="timestamp">7 minutes ago</span>
-            </li>
-            <li class="notification-item">
-                <div class="icon"><i class="fas fa-comment-dots"></i></div>
-                <div class="details">
-                    <div class="subject">Community Post.</div>
-                    <div class="message">1 reply on you community post</div>
-                </div>
-                <span class="timestamp">Monday 6:00 PM</span>
-            </li>
-        </ul>
-        <div class="notification-footer" id="viewAllNotifications">View All Notification</div>
-    </div>
-
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-                const addProductBtn = document.querySelector('.add-product-btn');
-                const editButtons = document.querySelectorAll('.edit-btn');
-                const addProductModal = document.getElementById('addProductModal');
-                const editProductModal = document.getElementById('editProductModal');
-                const closeAddModal = addProductModal.querySelector('.close-button');
-                const closeEditModal = editProductModal.querySelector('.edit-close-button');
-
-                // Function to open a modal
-                function openModal(modal) {
-                    modal.style.display = 'block';
-                }
-
-                // Function to close a modal
-                function closeModal(modal) {
-                    modal.style.display = 'none';
-                }
-
-                // Event listener for the "Add Product" button
-                addProductBtn.addEventListener('click', function() {
-                    openModal(addProductModal);
-                });
-
-                // Event listeners for the "Edit Product" buttons
-                editButtons.forEach(button => {
-                    button.addEventListener('click', function() {
-                        // In a real application, you would fetch the product data
-                        // associated with this edit button and populate the edit form.
-                        // For now, we'll just open the modal.
-                        openModal(editProductModal);
-
-                        // Example of how you might pre-fill the edit form (replace with your actual data)
-                        const productCard = this.closest('.product-card');
-                        const productName = productCard.querySelector('.product-details h3').textContent;
-                        const productPrice = productCard.querySelector('.price').textContent;
-
-                        document.getElementById('editProductName').value = productName;
-                        document.getElementById('editPrice').value = productPrice;
-                        // You would do the same for other fields like description and quantity.
-
-                        // You might also want to store the product ID in a hidden field
-                        // in the edit form so you know which product to update.
-                        // document.getElementById('editProductId').value = productId;
-                    });
-                });
-
-                // Event listener to close the "Add Product" modal
-                closeAddModal.addEventListener('click', function() {
-                    closeModal(addProductModal);
-                });
-
-                // Event listener to close the "Edit Product" modal
-                closeEditModal.addEventListener('click', function() {
-                    closeModal(editProductModal);
-                });
-
-                // Close modals if the user clicks outside of them
-                window.addEventListener('click', function(event) {
-                    if (event.target === addProductModal) {
-                        closeModal(addProductModal);
-                    }
-                    if (event.target === editProductModal) {
-                        closeModal(editProductModal);
-                    }
-                });
-
-                // --- Optional: Handle Form Submissions (Add Product) ---
-                const addProductForm = document.getElementById('addProductForm');
-                addProductForm.addEventListener('submit', function(event) {
-                    event.preventDefault(); // Prevent the default form submission
-
-                    // Get the values from the form
-                    const productName = document.getElementById('productName').value;
-                    const description = document.getElementById('description').value;
-                    const quantity = document.getElementById('quantity').value;
-                    const stockQuantityElement = productCard.querySelector('.stock-quantity');
-                    const productQuantity = stockQuantityElement ? stockQuantityElement.textContent : '';
-                    const price = document.getElementById('price').value;
-                    const imageInput = document.getElementById('imageInput');
-                    const imageFile = imageInput.files[0]; // Get the selected file
-
-                    // You would typically send this data to your server to add the new product
-                    console.log('Adding Product:', { productName, description, quantity, price, imageFile });
-
-                    // After successful submission, you might want to:
-                    // 1. Close the modal
-                    closeModal(addProductModal);
-                    // 2. Optionally, update the product grid on the page to show the new product
-                    // 3. Reset the form
-                    addProductForm.reset();
-                });
-
-                // --- Optional: Handle Form Submissions (Edit Product) ---
-                const editProductForm = document.getElementById('editProductForm');
-                editProductForm.addEventListener('submit', function(event) {
-                    event.preventDefault(); // Prevent the default form submission
-
-                    // Get the values from the edit form
-                    const productId = document.getElementById('editProductId').value; // If you added this hidden field
-                    const productName = document.getElementById('editProductName').value;
-                    const description = document.getElementById('editDescription').value;
-                    const quantity = document.getElementById('editQuantity').value;
-                    const price = document.getElementById('editPrice').value;
-                    const editImageInput = document.getElementById('editImageInput');
-                    const editImageFile = editImageInput.files[0]; // Get the selected file
-
-                    // You would typically send this data to your server to update the product
-                    console.log('Editing Product:', { productId, productName, description, quantity, price, editImageFile });
-
-                    // After successful submission, you might want to:
-                    // 1. Close the modal
-                    closeModal(editProductModal);
-                    // 2. Optionally, update the corresponding product card in the grid
-                    // 3. Reset the form (or just the relevant parts)
-                });
-
-                const notificationBell = document.getElementById('notificationBell');
-                const notificationDropdown = document.getElementById('notificationDropdown');
-                const viewAllNotifications = document.getElementById('viewAllNotifications');
-
-                notificationBell.addEventListener('click', () => {
-                    notificationDropdown.classList.toggle('show');
-                });
-
-                // Close the dropdown when clicking outside
-                document.addEventListener('click', (event) => {
-                    if (!notificationBell.contains(event.target) && !notificationDropdown.contains(event.target)) {
-                        notificationDropdown.classList.remove('show');
-                    }
-                });
-
-                // Redirect to the notification page when "View All Notification" is clicked
-                viewAllNotifications.addEventListener('click', () => {
-                    window.location.href = '../../HTML/EnterprisePage/notification.html'; // Adjust the path if necessary
-                });
-            });
+        
         </script>
+
+
+    <script src="../../JS/EnterprisePage/product.js"></script>
 
     </body>
 </html>
