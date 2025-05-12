@@ -36,6 +36,19 @@ body {
   justify-content: center;
 }
 
+.form-section p {
+  position: relative;
+  font-size: 16px;
+  color: #555;
+  bottom: 20px;
+}
+
+.form-section p a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
 .logo {
   font-size: 18px;
   font-weight: bold;
@@ -218,7 +231,7 @@ select:focus {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: brightness(0.8) contrast(2);
+  filter: brightness(0.7) contrast(1.5);
 }
 
 .imagecontainer::before {
@@ -892,3 +905,6 @@ select:focus {
     transform: scale(0.8);
   }
 }
+
+
+
