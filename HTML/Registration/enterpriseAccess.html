@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
-    <link rel="stylesheet" href="../../CSS/Registration/signup.css">
+    <link rel="stylesheet" href="../../CSS/Registration/enterpriseAccess.css">
     <script src="https://accounts.google.com/gsi/client" async defer></script>
 
 </head>
@@ -27,8 +27,7 @@
                 <div class="logo">
                     <span>ENT</span><span>RIQ</span>    
                 </div>
-            <h2>Customer Sign Up</h2>
-            <p>Are you an Enterprise Staff? <a href="../../HTML/Registration/enterpriseAccess.html">click here!</a></p>
+            <h2>Enterprise Staff Access Request</h2>
             <form action="#" method="post">
                 <div class="name-container">
                     <input type="text" placeholder="First Name" required>
@@ -36,19 +35,39 @@
                 </div>
                 <input type="email" name="email" placeholder="Email" required>
                 <input type="tel" placeholder="Contact Number" required>
+                <label class="file-upload">
+                    <h1>Upload Student ID</h1>
+                    <input type="file" name="student_id" accept=".jpg,.jpeg,.png" onchange="handleFileUpload(event)" required>
+                </label>
+
+                <!-- Optional preview -->
+                <img id="preview" src="" alt="Preview" style="max-width: 200px; display: none; margin-top: 10px;">
+
                 <div class="password-container">
                     <input type="password" name="password" placeholder="Password" required>
                     <input type="password" placeholder="Confirm Password">
                 </div>
+                <div style="display: flex; align-items: flex-start; padding: 12px; background: #F9FAFB; border: 1px solid #E5E7EB; border-radius: 8px; font-family: sans-serif; font-size: 14px; color: #374151;">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="20" height="20" style="margin-right: 8px; margin-top: 2px; color: #F59E0B;">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01M12 6.5c-3.038 0-5.5 2.462-5.5 5.5s2.462 5.5 5.5 5.5 5.5-2.462 5.5-5.5-2.462-5.5-5.5-5.5z" />
+                    </svg>
+                    <span>
+                        All staff access requests are subject to manual review by a system admin. Access will not be granted immediately.
+                    </span>
+                </div>
+
                 <div>
-                    <div>
+                    <!-- <div>
                         <select>
                             <option value="" disabled selected>Select Role</option>
                             <option value="customer">Customer</option>
                         </select>
+                    </div> -->
+                    <div class="button-container">
+                        <button type="submit" class="signup-button" onclick="openPopup()">Submit Request</button>
+                        <a href="../Registration/login.html">Back to login</a>
                     </div>
-                    <button type="submit" class="signup-button" onclick="openPopup()">Sign Up</button>
-                    <div class="or-divider">or</div>
+                    <!-- <div class="or-divider">or</div>
                     <button id="gmail-signup" class="gmail-signup">
                         <img src="../../Assets/google.png" 
                              alt="Google Logo" class="google-icon">
@@ -56,7 +75,7 @@
                     <div class="login-link">
                         Already have an account?
                         <a href="login.html">Login Here</a>
-                    </div>
+                    </div> -->
                 </div>
             </form>
         </div>
@@ -75,8 +94,8 @@
     <!-- **Registered Successfully Modal --> 
     <div class="card" id="regSuccessModal">
         <img src="../../Assets/reg.png" alt="">
-        <p class="cookieHeading">Registered Successfully!</p>
-        <p class="cookieDescription">Congratulations! You are now part of Entriq Fam!</p>
+        <p class="cookieHeading">Request Submitted!</p>
+        <p class="cookieDescription">Your access will be reviewed by the admin. Please check your email for confirmation.</p>
         <div class="buttonContainer">
         <button class="acceptButton" id="goToLogin">Go to Login</button>
         </div>
@@ -113,16 +132,14 @@
              <div class="shadow"></div>
              <div class="shadow"></div>
             </div>
-            <h1 class="loading-txt">Registering your credentials...</h1>
+            <h1 class="loading-txt">Submitting your request...</h1>
     </div>
 
 
 
 
-    <script src="../../JS/Registration/signup.js"></script>
+    <script src="../../JS/Registration/enterpriseAccess.js"></script>
 
-    <!-- TODO: Feedback handling modal messages-->
-    <!-- *! Fix layout medyo masikip tignan -->
-    <!-- *! Visual bug sa button wherein nag duduplicate yung button ng google auth -->
+
 </body>
 </html>
