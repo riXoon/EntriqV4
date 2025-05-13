@@ -39,10 +39,17 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     //**Cart modal to */
-    function openCartModal(){
-        cartModal.classList.add("open-popup");
-        modalBg.classList.add("modal-bgPopup");
-    }
+    function openCartModal() {
+    cartModal.classList.add("open-popup");
+    modalBg.classList.add("modal-bgPopup");
+
+    // Automatically close after 3 seconds (3000 ms)
+    setTimeout(() => {
+        cartModal.classList.remove("open-popup");
+        modalBg.classList.remove("modal-bgPopup");
+    }, 1000);
+}
+
 
     addToCartButton.forEach((button) => {
         button.addEventListener("click", function (event){
