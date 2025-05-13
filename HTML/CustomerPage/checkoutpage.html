@@ -48,6 +48,15 @@
     
         <!-- User Menu (Click to Open Submenu) -->
         <div class="icons">
+            <div class="search-container">
+                <input checked="" class="checkbox" type="checkbox"> 
+                <div class="mainbox">
+                    <div class="iconContainer">
+                        <svg viewBox="0 0 512 512" height="1em" xmlns="http://www.w3.org/2000/svg" class="search_icon"><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"></path></svg>
+                    </div>
+                <input class="search_input" placeholder="search" type="text">
+                </div>
+            </div>
             <button id="cartButton">
                 <i class="fas fa-shopping-cart"></i>
                 <span class="cart-count" id="cartCount">3</span>
@@ -185,60 +194,63 @@
                 </div>
             </section>
 
-            <section>
-                <div class="container">
-                    <div class="checkoutLayout">
+                <section class="px-6 py-10 bg-gray-50">
+                    <div class="max-w-4xl mx-auto bg-white rounded-lg shadow-md p-8">
+                        <h2 class="text-2xl font-semibold text-gray-800 mb-6">Order Summary</h2>
 
-                        <div class="returnCart">
-                            <a href="customerPage.html" class="buttonLink"> Keep Shopping</a>
-                            <h1>List Product in Cart </h1>
-                            <div class="list">
-                                <div class="item">
-                                    <img src="../../Assets/borgir.png" alt="">
-                                    <div class="info">
-                                        <div class="name"> Pastil ni Juan </div>
-                                        <div class="price"> ₱99 </div>
-                                    </div>
-                                    <div class="quantity"> Quantity: 3</div>
-                                    <div class="returnPrice"> ₱297 </div>
-                                </div>
+                        <!-- Order Items -->
+                        <div class="space-y-4 mb-8">
+                        <div class="flex justify-between items-center border-b pb-2">
+                            <p class="text-gray-700">Pastil ni Juan (x1)</p>
+                            <p class="font-semibold text-gray-900">₱99.99</p>
+                        </div>
+                        <div class="flex justify-between items-center border-b pb-2">
+                            <p class="text-gray-700">Pastil ni Juan (x1)</p>
+                            <p class="font-semibold text-gray-900">₱99.99</p>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <p class="text-gray-700">Pastil ni Juan (x1)</p>
+                            <p class="font-semibold text-gray-900">₱99.99</p>
+                        </div>
+                        </div>
+
+                        <!-- User Info Form -->
+                        <form class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div>
+                            <label class="block text-sm font-medium text-gray-700">Full Name</label>
+                            <input type="text" class="mt-1 block w-full px-4 py-2 border rounded-md shadow-sm focus:ring focus:ring-yellow-200 focus:outline-none" required>
+                            </div>
+                            <div>
+                            <label class="block text-sm font-medium text-gray-700">Phone Number</label>
+                            <input type="tel" class="mt-1 block w-full px-4 py-2 border rounded-md shadow-sm focus:ring focus:ring-yellow-200 focus:outline-none" required>
                             </div>
                         </div>
-                        <div class="right">
-                            <h1>CHECKOUT</h1>
-                            <div class="form">
-                                <div class="group">
-                                    <label for="">Full Name</label>
-                                    <input type="text" name="" id="">
-                                </div>
-                                <div class="group">
-                                    <label for="">Contact</label>
-                                    <input type="text" name="" id="">
-                                </div>
-                                <div class="group">
-                                    <label for="">Section</label>
-                                    <input type="text" name="" id="">
-                                </div>
-                            </div>
-                            <div class="return">
-                                <div class="row">
-                                    <div>Total Quantity:</div>
-                                    <div class="totalQuantity">3</div>
-                                </div>
-                                <div class="row">
-                                    <div>Total Price:</div>
-                                    <div class="totalPrice"> ₱297 </div>
-                                </div>
-                            </div>
-                            <button href= "#" class="buttonCheckout">
-                                CHECKOUT
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700">Where you at inside the school?</label>
+                            <textarea class="mt-1 block w-full px-4 py-2 border rounded-md shadow-sm focus:ring focus:ring-yellow-200 focus:outline-none" rows="3" required></textarea>
+                        </div>
+
+                        <!-- Payment -->
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Payment Method</label>
+                            <select class="block w-full px-4 py-2 border rounded-md shadow-sm focus:ring focus:ring-yellow-200 focus:outline-none">
+                            <option>Cash on Delivery</option>
+                            <option>GCash</option>
+                            <option>Credit/Debit Card</option>
+                            </select>
+                        </div>
+
+                        <!-- Total & Submit -->
+                        <div class="flex justify-between items-center mt-6">
+                            <p class="text-lg font-semibold">Total: <span class="text-yellow-500">₱300.00</span></p>
+                            <button type="submit" class="bg-yellow-500 hover:bg-yellow-600 text-white font-medium px-6 py-2 rounded-md transition">
+                            Place Order
                             </button>
                         </div>
+                        </form>
                     </div>
-                </div>
-            </section>
-
-            
+                    </section>
 
             <footer class="footer-container">
                 <div class="footer-content">
